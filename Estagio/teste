@@ -1,0 +1,51 @@
+var database = '';
+let buton = document.querySelector('#enviar').addEventListener('click', salvar());
+
+function iniciar() {
+    const dbname = 'Biblioteca';
+    if (!database) {
+        var open = window.indexedDB.open(dbname, '1');
+        open.onsuccess = function(event) {
+            database = event.target.result;
+            console.log("entro no banco1");
+        }
+        open.onupgradeneeded = function(event) {
+            var database = event.target.result;
+            var objetos = database.createObjectStore("filmes", { keyPath: "id", autoIncrement: true })
+
+        }
+
+    }
+}
+
+function salvar() {
+    let buton = document.querySelector('#enviar')
+    let butonpai = document.querySelector('#enviar').parentNode.querySelectorAll('input');
+    buton.disabled = true;
+    dbname = "Biblioteca";
+    var open = window.indexedDB.open(dbname, '1');
+    open.onsuccess = function(event) {
+        database = event.target.result;
+        var transaction = database.transaction(["filmes"], "readwrite");
+        var store = transaction.objectStore("filmes");
+        var request = store.add({ id: '3', nome: "oi3", idade: "12", nota: "funfo" });
+        buton.disabled = false;
+        request.onsuccess = function(event) {
+            console.log("funfo");
+        }
+        request.onerror = function(event) {
+            console.log("erro");
+        }
+    }
+}
+
+function remove() {
+    var open = window.indexedDB.open("Biblioteca", '1');
+    open.onsuccess = function(e) {
+        console.log('entro');
+        var database = e.target.result.transaction(['filmes'], 'readwrite').objectStore('filmes').delete('');
+        database.onsuccess = function(event) {
+            console.log('Pronto');
+        };
+    }
+}

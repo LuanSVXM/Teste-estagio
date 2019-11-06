@@ -1,0 +1,20 @@
+- Listar filmes cadastrados
+- Adicionar, editar e remover filmes
+
+Os cadastros devem conter obrigatoriamente:
+Nome, resumo, nota e data de lançamento
+
+A lista de filmes deverá ser salva utilizando o localStorage do navegador.
+
+
+Objetivos opcionais:
+
+- Usar indexedDB
+- Consultar API do IMDB para popular dados automaticamente
+- Outras funcionalidades que julgar relevantes
+
+O código fonte deve ser enviado para o seu repositório do github. 
+
+1 salvar no banco
+2 carregar banco com reloud da pag
+3 modificar x item
