@@ -1,0 +1,182 @@
+html,
+body,
+.container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mddados {
+    position: relative;
+    margin: 20px 0;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+}
+
+.cssdados {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.inputdp {
+    position: relative;
+    margin: 8px;
+    width: 400px;
+    height: 30px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+}
+
+textarea {
+    border: 1px solid #000000;
+    background: #cccccc;
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+
+.buttondp {
+    width: 100px;
+    position: relative;
+    margin: 8px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid white;
+    top: 0%;
+}
+
+nav {
+    height: 100%;
+    background-color: black;
+    color: #FFFF;
+    text-align: center;
+    display: block;
+    font-family: 'Lucida Sans';
+    border-bottom-color: white;
+    border-bottom: 1px;
+}
+
+.container {
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
+#filmes {
+    background-color: black;
+    position: relative;
+    overflow: auto;
+}
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    word-wrap: break-all;
+    width: 50%;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+}
+
+.buttonac {
+    width: 100%;
+    margin: 3px 0;
+}
+
+.sair {
+    top: 10px;
+    color: red;
+    left: 90%;
+    position: relative;
+}
+
+#enviar {
+    position: relative;
+    margin-left: 20px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+thead {
+    background-color: gray;
+    color: white;
+}
+
+thead tr {
+    height: 40px;
+}
+
+th {
+    padding: 10px 5px;
+}
+
+td {
+    border-bottom: 1px solid gray;
+    padding: 0px 5px;
+    height: 50px;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    border: 1px solid gray;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.buttonac {
+    background-color: yellow;
+    color: black;
+}
+
+#inviar {
+    margin-left: 120px;
+}

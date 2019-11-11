@@ -5,38 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="./verificat.js"></script>
+    <script src="sw.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div id="filmes">
-        <table border="1 px">
+    <header>
+        <nav>
+            E S T A G I O
+        </nav>
+    </header>
+    <div class="container">
+        <button id='inviar'> Adicionar Filmes </button>
+        <div class='invi' hidden>
+            <div class="overlay">
+                <div class="mddados">
+                    <div class="cssdados">
+                        <button title="Sair" class='sair'>X</button>
+                        <br>
+                        <input type="text" class="inputdp" placeholder="Nome" name="nome"><br>
+                        <input type="text" class="inputdp" placeholder="Resumo" name="resumo"><br>
+                        <input type="number" max="10" min="0.1" class="inputdp" placeholder="Nota" name="nota"><br>
+                        <input type="date" class="inputdp" placeholder="Data de lançamento" name="dtlanca"><br>
+                        <br>
+                        <button id="enviar" onclick="enviar()" class="buttondp">enviar</button>
+                    </div>
 
-            <thead>
-                <tr>
-                    <td>Nome</td>
-                    <td>Resumo</td>
-                    <td>Nota</td>
-                    <td>Data de Lançamento</td>
-                </tr>
-            </thead>
-            <tbody>
+                </div>
 
-            </tbody>
+            </div>
+        </div>
+        <div id="filmes">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Resumo</th>
+                        <th>Nota</th>
+                        <th>Data de Lançamento</th>
+                        <th>Butoes</th>
+                    </tr>
+                </thead>
+                <tbody>
 
-        </table>
-    </div>
-
-    <br><br><br><br>
-    <div id="addfilmes">
-        <fieldset>
-            <legend>adicionar filmes</legend>
-            <input type="text" name="nome">
-            <input type="text" name="resumo">
-            <input type="text" name="nota">
-            <input type="text" name="dtlanca">
-            <button id="enviar" onclick="enviar()">enviar</button>
-        </fieldset>
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <script src="./main.js"></script>
