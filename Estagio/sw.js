@@ -9,7 +9,8 @@ this.addEventListener('install', event => {
                 return cache.addAll([
                     './main.js',
                     './index.html',
-                    './style.css'
+                    './style.css',
+                    './manifest.json'
                 ]);
             })
     );
